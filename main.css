@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F9;
+}
+
+.date_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* DELETE */
+    margin-top: 10%;
+}
+
+.date_container .dashboard_header {
+    margin: 0 0 0 3%;
+    position: relative;
+}
+
+.date_container .dashboard_header::before {
+    content: url(./img/Component\ 12.svg);
+    
+    position: absolute;
+    left: -25%;
+}
+
+.date_filter {
+    width: 440px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+
+    border: 1px solid #F0F2F5;
+    border-radius: 12px;
+
+    background-color: #F0F2F5;
+
+    display: flex;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+.date_filter li {
+    padding: 3% 10%;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    line-height: 17px;
+    letter-spacing: -0.154px;
+
+    color: rgba(0, 0, 0, 0.5);
+
+    transition: all .3s ease;
+}
+
+.date_filter li:hover {
+
+    color: #1B59F8;
+
+    border-color: #F0F2F5;
+    border-radius: 10px;
+    
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    background-color: #FFFFFF;
+}
+
+.timePicker_container {
+    width: 200px;
+
+    padding: 1% 1%;
+
+    border: 1px solid #F0F2F5;
+    border-radius: 10px;
+
+    background-color: #ffff;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.timePicker_container .bg-gray-50 {
+    border: none;
+    background-color: #F4F5F7;
+    
+    margin-right: 0;
+    padding: 5% 0;
+    text-align: center;
+}
+
+.timePicker_container .bg-gray-50::placeholder {
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.timePicker_container .mx-4 {
+    margin: 0 5%;
+}
+
+.timePicker_container .pl-3 {
+    padding-right: 0.65rem;
+    padding-left: 0;
+}
+
+
+.dashboard_section {
+    width: 65%;
+    margin: 0 auto;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.dashboard_header {
+    margin-left: 3%;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+
+/* GRAPH SECTION */
+
+.data_section {
+    width: 100%;
+
+    margin: 4% 0 7%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.data_list {
+    width: 52%;
+
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 5%;
+
+    list-style-type: none;
+}
+
+.data_list li {   
+    padding: 7% 10%;
+    
+    border: 1px solid #EFF0F6;
+    border-radius: 20px;
+    background-color: #ffff;
+
+    box-sizing: border-box;
+}
+
+.data_list li:nth-child(-n+2) {
+    margin-bottom: 10%;
+}
+
+.data_type {
+    margin: 0;
+
+    font-size: 14px;
+}
+
+.data_info {
+    margin: 5% 0 15% 0;
+
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.chart_container {
+    width: 45%;
+
+    padding: 3%;
+
+    border: 1px solid #EFF0F6;
+    border-radius: 20px;
+    background-color: #ffff;
+
+    box-sizing: border-box;
+}
+
+.chart_container .data_info {
+    margin-top: 3%;
+}
+
+
+
+
+
+
+/* GRAPH SECTION */
+
+.graph_container {
+    margin-bottom: 10%;
+
+    border: 1px solid #EFF0F6;
+    border-radius: 20px;
+    background-color: #ffff;
+
+
+    /* DELETE */
+    height: 500px;
+}
+
+.graph_section .dashboard_header {
+    margin-bottom: 3%;
+}
