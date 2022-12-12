@@ -9,6 +9,8 @@ body {
     justify-content: space-between;
     align-items: center;
 
+    position: relative;
+
     /* DELETE */
     margin-top: 10%;
 }
@@ -18,11 +20,53 @@ body {
     position: relative;
 }
 
-.date_container .dashboard_header::before {
-    content: url(./img/Component\ 12.svg);
-    
+.subMenuContainer {
+    display: flex;
+}
+
+.subMenuContainer img {
+    margin-right: 10%;
+
+    cursor: pointer;
+}
+
+.dashboard_submenu {
+    display: block;
+
+    width: 20%;
+
+    padding: 1.5% 0 5%;
+
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+
+    line-height: 30px;
+
+    border: 1px solid #EFF0F6;
+    border-radius: 15px;
+    background-color: #ffff;
+
+    box-sizing: border-box;
+
     position: absolute;
-    left: -25%;
+    left: 2%;
+    top: 5%;
+}
+
+.submenu_close {
+    display: none;
+}
+
+.dashboard_submenu li {
+    padding-left: 10%;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.dashboard_submenu li:hover {
+    padding-left: 20%;
 }
 
 .date_filter {
